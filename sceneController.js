@@ -47,11 +47,11 @@ class SceneController {
     }
   }
 
-  window.addEventListener("load", function(){
-    document.getElementById("up").onclick = function(){
-        console.log(this.id, this.innerHTML);
-    }
-  });
+  
+  document.getElementById("up").onclick = function(){
+    console.log(this.id, this.innerHTML);
+  }
+  
 
   reset() {
     this.sceneObjects.forEach(({box, material, mesh}) => {
