@@ -52,6 +52,7 @@ class SceneController {
     console.log(this.id, this.innerHTML);
   }
   
+  console.log('is this importing');
 
   reset() {
     this.sceneObjects.forEach(({box, material, mesh}) => {
