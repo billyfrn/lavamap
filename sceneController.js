@@ -34,6 +34,7 @@ class SceneController {
     mesh.position.set(positionX, 10, positionZ)
     this.scene.add(mesh)
     this.sceneObjects.push({box, material, mesh})
+    console.log('it work')
   }
 
   mouseCapture = (event) => {
