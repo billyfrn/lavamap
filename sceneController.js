@@ -47,10 +47,11 @@ class SceneController {
     }
   }
 
-  move() {
-    //Implement move here
-    //object must be moved like in the sample recording
-  }
+  window.addEventListener("load", function(){
+    document.getElementById("up").onclick = function(){
+        console.log(this.id, this.innerHTML);
+    }
+  });
 
   reset() {
     this.sceneObjects.forEach(({box, material, mesh}) => {
